@@ -3,42 +3,29 @@
 <head>
   <title>Welcome</title>
   <meta charset="utf-8">
-<style>
-  a {
-      color:black;
-      text-decoration: none;
-    }
-    h1{
-      font-size:40px;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <input type="button" value="Dark" onclick="document.querySelector('body').style.backgroundColor='black';
+          document.querySelector('body').style.color='white';">
+
+  <input type="button" value="Lite"  onclick="document.querySelector('body').style.backgroundColor='white';
+          document.querySelector('body').style.color='black';">
+
   <h1><a href="index.html" target="_blank">What eat today?</a></h1>
 
-<img src="welcomepic.jpg" width="100%" height="400"
-<p>
-<h2>Inventory</h2>
-</p>
+<div id="grid">
   <ol>
-    <li><a href="1.html" target="_blank">Egg</a></li>
-    <li><a href="2.html" target="_blank">Bacon</a></li>
-    <li><a href="3.html" target="_blank">BEEF</a></li>
+      <li><a href="1.html" target="_blank">Egg</a></li>
+      <li><a href="2.html" target="_blank">Corn</a></li>
+      <li><a href="3.html" target="_blank">BEEF</a></li>
   </ol>
-<!--
-  <h1><a href="index.html" target="_blank"><font color="red">What eat today?</font></a></h1>
-
-<img src="welcomepic.jpg" width="300" height="300"
-<p>
-<h2>Inventory</h2>
-</p>
-  <ul>
-    <li><a href="1.html" target="_blank"><font color="red">1. Egg</font></a></li>
-    <li><a href="2.html" target="_blank"><font color="red">2. Bacon</font></a></li>
-    <li><a href="3.html" target="_blank"><font color="red">3. BEEF</font></a></li>
-  </ul>
--->
-
+  <div id="article">
+    <h2>What are today's specials?</h2>
+      <p>
+        oday's Specials is a cover album by The Specials, released in 1996 (see 1996 in music). It is the first studio album by the group since 1984, albeit not involving the full original line-up. Original members Neville Staple, Roddy Byers, Lynval Golding, and Horace Panter are joined by new members Mark Adams and Adam Birch, along with a number of sessions musicians. Lead vocals are mostly handled by Staple and Golding, with Neville's daughter Sheena Staples contributing backing vocals to the album.
+      </p>
+  </div>
+</div>
 </body>
 </html>

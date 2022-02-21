@@ -1,0 +1,68 @@
+
+@font-face {
+    font-family: 'CookieRunOTF-Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+  margin:0;
+}
+  a {
+      color:black;
+      text-decoration: none;
+
+    }
+
+    h1{
+      font-size:45px;
+      text-align: center;
+      border-bottom:2px solid gray;
+      margin:0;
+      padding:20px;
+      font-family: 'CookieRunOTF-Black';;
+
+    }
+
+    h2{
+      font-family: 'CookieRun-Regular';
+    }
+    ol{
+     border-right:2px solid gray;
+     width:100px;
+     margin:0;
+     padding:20px;
+     font-family: 'CookieRun-Regular';
+     font-size:20px;
+   }
+
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+
+    #grid ol{
+      padding-left: 35px;
+
+      }
+      #grid #article{
+      padding-left:25px;
+      font-family: 'CookieRun-Regular';
+    }
+      @media(max-width:800px){
+        #grid{
+          display: block;
+      }
+      ol{
+       border-right:none;
+     }
+     h1{
+       border-bottom:none;
+     }
