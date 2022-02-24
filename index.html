@@ -9,29 +9,45 @@ span{
   color:blue;
 }
 </style>
+<script>
+  function DarkLitehandler(self) {
+    var target = document.querySelector('body');
+    if(self.value === 'Dark'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    self.value = 'Lite';
+
+     var alist = document.querySelectorAll('a');
+     var i = 0;
+     while(i < alist.length){
+         alist[i].style.color = 'powderblue';
+       i= i + 1;
+     }
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      self.value = 'Dark';
+
+      var alist = document.querySelectorAll('a');
+     var i = 0;
+     while(i < alist.length){
+         alist[i].style.color = 'black';
+       i= i + 1;
+     }
+    }
+  }
+</script>
 <head>
   <title>Welcome</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <input type="button" value="black" onclick="
-  if(document.querySelector('body').dataset.mode === 'Lite')
-  {document.querySelector('body').style.backgroundColor = 'black';
-  document.querySelector('body').style.color = 'white';
-  document.querySelector('body').dataset.mode = 'Dark';
-  this.value = 'Lite';
-} else {
-  document.querySelector('body').style.backgroundColor ='white';
-  document.querySelector('body').style.color = 'black';
-  document.querySelector('body').dataset.mode = 'Lite';
-  this.value = 'Dark';
-}
-">
+  <input id="night_day" type="button" value="Dark" onclick="
+   DarkLitehandler(this);
+ ">
 
-
-
-  <h1><a href="index.html" target="_blank">What eat today?</a></h1>
+<h1><a href="index.html" target="_blank">What eat today?</a></h1>
 
 <div id="grid">
   <ol>
