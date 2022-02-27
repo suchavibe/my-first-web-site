@@ -5,20 +5,36 @@
     <title></title>
   </head>
   <body>
-    <h1>function<h1>
-    <ul>
-    <script>
-      function i(){
-        document.write('<li>2-1</li>');
-        document.write('<li>2-2</li>');
-      }
-      document.write('<li>1</li>');
-      i();
-      document.write('<li>3</li>');
-      document.write('<li>4</li>');
-      i();
-    </script>
-    </ul>
+    <h1>Object</h1>
+    <h2>Create</h2>
+      <script>
+        var cowerks = {
+          "programmer":"egoing",
+          "designer":"leezche"
+        };
+        document.write("programmer : "+cowerks.programmer+"<br>");
+        document.write("designer : "+cowerks.designer+"<br>");
+        cowerks.book = "duru";
+        document.write("book : "+cowerks.book+"<br>");
+        cowerks["data senter"] = "taeho";
+        document.write("data senter : "+cowerks["data senter"]+"<br>");
+      </script>
+      <h2>Iterate</h2>
+        <script>
+          for(var key in cowerks) {
+            document.write(key+' : '+cowerks[key]+'<br>');
+          }
+        </script>
+        <h2>Property & Method</h2>
+        <script>
+          cowerks.showAll = function(){
+            for(var key in this) {
+
+              document.write(key+' : '+this[key]+'<br>');
+          }
+        }
+        cowerks.showAll();
+        </script>
 
   </body>
 </html>
